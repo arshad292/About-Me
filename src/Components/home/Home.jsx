@@ -9,75 +9,77 @@ import './home.css'
 const Home = () => {
 return (
     <section className='home' id='home'>
-        <div className='home__container container'>
-            <p className='home__subtitle text-cs'>
-                Hello, <span>My Name Is</span>
-            </p>
-            
-            <h1 className='home__title text-cs'>
-                <span>ᏗᏒᏕᏂᏗᎴ</span> 🅺
-            </h1>
+        <div className='home__wrapping'>
+            <div className='home__container container'>
+                <p className='home__subtitle text-cs'>
+                    Hello, <span>My Name Is</span>
+                </p>
+                
+                <h1 className='home__title text-cs'>
+                    <span>ᏗᏒᏕᏂᏗᎴ</span> 🅺
+                </h1>
 
-            <p className='home__job'>
-                <span className='text-cs'>I Am</span> <b>Python Full Stack Developer</b>
-            </p>
+                <p className='home__job'>
+                    <span className='text-cs'>I Am</span> <b>Python Full Stack Developer</b>
+                </p>
 
-            <div className='home__img-wrapper'>
-                <div className='home__banner'>
-                    <img src={profileImg} alt='' className='home__profile'/>
+                <div className='home__img-wrapper'>
+                    <div className='home__banner'>
+                        <img src={profileImg} alt='' className='home__profile'/>
+                    </div>
+                    <p className='home__data home__data-one'>
+                        <span className='text-lg'> 
+                        1 <b>+</b>
+                        </span>
+
+                        <span className='text-sm text-cs'> 
+                        Years of <span>Experience</span>
+                        </span>
+                    </p>
+
+                    <p className='home__data home__data-two'>
+                        <span className='text-lg'> 
+                        30
+                        </span>
+
+                        <span className='text-sm text-cs'> 
+                        Completed <span>Projects</span>
+                        </span>
+                    </p>
+
+                    <img src={shapeOne} alt='' className='shape shape__1'/>
+                    <img src={shapeTwo} alt='' className='shape shape__2'/>
+                    <img src={shapeTwo} alt='' className='shape shape__3'/>
                 </div>
-                <p className='home__data home__data-one'>
-                    <span className='text-lg'> 
-                    1 <b>+</b>
-                    </span>
 
-                    <span className='text-sm text-cs'> 
-                    Years of <span>Experience</span>
-                    </span>
+                <p className='home__text'>
+                    From India, Kerala, I have rich experience in Python Full Stack, interested to learn more about developing, designing and loves problem solving. More curious when
+                    got errors to solve. Also a dedicated and work ethic person. I love to talk with you about our unique.
                 </p>
 
-                <p className='home__data home__data-two'>
-                    <span className='text-lg'> 
-                    30
-                    </span>
+                <div className='home__socials'>
+                    <a href='https://www.linkedin.com/in/muhammed-arshad-2495361b7/' className='home__social-link'>
+                        <FaLinkedin/>
+                    </a>
 
-                    <span className='text-sm text-cs'> 
-                    Completed <span>Projects</span>
-                    </span>
-                </p>
+                    <a href='https://github.com/arshad292' className='home__social-link'>
+                        <FaGithub/>
+                    </a>
 
-                <img src={shapeOne} alt='' className='shape shape__1'/>
-                <img src={shapeTwo} alt='' className='shape shape__2'/>
-                <img src={shapeTwo} alt='' className='shape shape__3'/>
-            </div>
-
-            <p className='home__text'>
-                From India, Kerala, I have rich experience in Python Full Stack, interested to learn more about developing, designing and loves problem solving. More curious when
-                got errors to solve. Also a dedicated and work ethic person. I love to talk with you about our unique.
-            </p>
-
-            <div className='home__socials'>
-                <a href='https://www.linkedin.com/in/muhammed-arshad-2495361b7/' className='home__social-link'>
-                    <FaLinkedin/>
-                </a>
-
-                <a href='https://github.com/arshad292' className='home__social-link'>
-                    <FaGithub/>
-                </a>
-
-                <a href='' className='home__social-link'>
-                    <FaTwitter/>
-                </a>
-            </div>
-
-            <div className='home__btns'>
-                <a href='' className='btn text-cs'>
-                    Download CV
-                </a>
-
-                <a href='' className='hero__link text-cs'>
-                    My Skills
-                </a>
+                    <a href='' className='home__social-link'>
+                        <FaTwitter/>
+                    </a>
+                </div>
+                
+                <div className='home__btns'>
+                    <a href='' className='btn text-cs'>
+                        Download CV
+                    </a>
+                    
+                    <a href='' className='hero__link text-cs'>
+                        My Skills
+                    </a>
+                </div>
             </div>
         </div>
     </section>

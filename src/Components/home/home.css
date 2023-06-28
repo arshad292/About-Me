@@ -1,5 +1,9 @@
 .home {
     background-image: var(--first-gradient);
+    padding-bottom: 180px;
+}
+
+.home__wrapping{
     min-height: 100vh;
     display: grid;
     align-items: center;
@@ -13,6 +17,7 @@
 .home__subtitle,
 .home__job{
     font-weight: 700;
+    color: var(--title-color);
 }
 
 .home__subtitle,
@@ -81,7 +86,7 @@
 
 .home__img-wrapper{
     position: absolute;
-    top: 4%;
+    top: 0%;
     right: 12px;
     width: 100%;
     max-width: 680px;
