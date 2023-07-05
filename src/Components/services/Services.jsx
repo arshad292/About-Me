@@ -1,6 +1,8 @@
 import  './services.css'
 import { services } from '../../Data'
 import { FaArrowRight } from 'react-icons/fa'
+import shapeTwo from '../../assets/shape-2.png'
+
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
@@ -17,7 +19,7 @@ const Services = () => {
             My <span>Services</span>
         </p>
 
-        <Swiper         
+        <Swiper           
         pagination={{
           clickable: true,
         }}
@@ -39,7 +41,7 @@ const Services = () => {
         className='services__container container mySwiper'>
           {services.map(({name, title, description}, index) => {
             return (
-              <SwiperSlide className='services__item card card-one'>
+              <SwiperSlide className='services__item card card-one' key={index}>
                 <span className='services__subtitle text-cs'>{name}</span>
 
                 <h3 className='services__title'>{title}</h3>
@@ -49,6 +51,8 @@ const Services = () => {
                 See Pricing
                 <FaArrowRight className='link__icon'></FaArrowRight>
                 </a>
+
+                <img src={shapeTwo} alt='' className='shape c__shape'/>
               </SwiperSlide>
             )
           })}

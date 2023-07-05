@@ -123,6 +123,11 @@ img{
   margin-inline: auto;
 }
 
+.grid{
+  display: grid;
+  gap: 24px;
+}
+
 .text-cs{
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -202,11 +207,19 @@ img{
 
 .card{
   background-color: var(--container-color);
+  overflow: hidden;
+  text-align: left;
+  position: relative;
 }
 
 .card-one{
   padding: 30px 35px;
   border-radius: 18px;
+}
+
+.card-two{
+  padding: 30px ;
+  border-radius: 20px;
 }
 
 .link{
@@ -224,4 +237,12 @@ img{
 
 .link:hover .link__icon{
   margin-left: 15px;
+}
+
+.c__shape{
+  right: -24px;
+  bottom: -24px;
+  width: 141px;
+  height: 141px;
+  
 }
