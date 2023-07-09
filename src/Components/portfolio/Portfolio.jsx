@@ -3,12 +3,27 @@ import List from './List'
 import Items from './Items'
 import { projects } from '../../Data'
 import'./portfolio.css'
+import { AnimatePresence } from 'framer-motion'
 
-const allNavList = projects.map((projects) => projects.category)
-  
+const allNavList =['all', 
+...new Set(projects.map((projects) => projects.category))]
+
 
 const Portfolio = () => {
     const [porjectItems, setMenuItems] = useState(projects)
+    const [navList, setCategories] = useState(allNavList)
+
+    const filterItems = (category) => {
+      if (category === 'all'){
+        setMenuItems(projects)
+        return
+      }
+      
+      const newProjectItems = projects.filter((item) => item.
+      category === category)
+
+      setMenuItems(newProjectItems)
+    }
 
   return (
     <section className='portfolio section' id='work'>
@@ -17,10 +32,12 @@ const Portfolio = () => {
             My <span>Cases</span>
         </p>
 
-        <List/>
+        <List list={navList} filterItems={filterItems} />
 
         <div className="portfolio__container container grid">
+            <AnimatePresence initial={false}>
             <Items porjectItems={porjectItems}/>
+            </AnimatePresence>
         </div>
     </section>
   )
