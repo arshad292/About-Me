@@ -28,7 +28,7 @@
   
   --third-gradient : linear-gradient(
     180deg,
-    var(--bg-color) 0%,
+    var(--bg-color)0%,
     var(--bg-color)100%,
   );
 

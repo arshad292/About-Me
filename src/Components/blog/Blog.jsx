@@ -7,7 +7,7 @@ import Blog3 from '../../assets/blog3.jpg'
 
 const Blog = () => {
   return (
-    <section className="bog section" id='blog'>
+    <section className="blog section" id='blog'>
         <h2 className='section__title text-cs'>Latest Blog</h2>
         <p className='section__subtitle'>
         My <span>Articles and Advice</span>

@@ -8,7 +8,8 @@ import Resume from './Components/resume/Resume'
 import Testimonials from './Components/testimonials/Testimonials'
 import Pricing from './Components/pricing/Pricing'
 import Blog from './Components/blog/Blog'
-
+import Contact from './Components/contact/Contact'
+import Footer from './Components/footer/Footer'
 import './App.css'
 
 function App() {
@@ -23,6 +24,8 @@ function App() {
       <Testimonials/>
       <Pricing/>
       <Blog/>
+      <Contact/> 
+      <Footer/>
     </main>
   )
 }
