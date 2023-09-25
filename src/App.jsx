@@ -10,12 +10,14 @@ import Pricing from './Components/pricing/Pricing'
 import Blog from './Components/blog/Blog'
 import Contact from './Components/contact/Contact'
 import Footer from './Components/footer/Footer'
+import Header from './Components/header/Header'
 import './App.css'
 
 function App() {
 
   return (
     <main className='main'>
+      <Header/>
       <Home/>
       <Services/>
       <Skills/>

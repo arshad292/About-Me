@@ -1,6 +1,7 @@
 import React from 'react'
 import { testimonials } from '../../Data';
 import shapeTwo from '../../assets/shape-2.png'
+import shapeOne from '../../assets/shape-1.png'
 import testimonialIcon from '../../assets/testimonials-icon.svg'
 
 // Import Swiper React components
@@ -15,13 +16,14 @@ import './testimonials.css'
 
 const Testimonials = () => {
   return (
-    <section className='testimonials section' id='testimonials'>
+    <section className='testimonials section' id='testimonial'>
     <h2 className='section__title text-cs'>Testimonials</h2>
     <p className='section__subtitle'>
         My <span>Customers Say</span>
     </p>
 
-    <Swiper           
+    <Swiper 
+    spaceBetween={30}           
     pagination={{
       clickable: true,
     }}
@@ -63,6 +65,14 @@ const Testimonials = () => {
         )
       })}
     </Swiper>
+
+    <div className="section__deco deco__right">
+                <img src={shapeOne} alt="" className="shape" />
+            </div>
+
+    <div className="section__bg-wrapper">
+            <span className="bg__title">Reviews</span>
+    </div>
 </section>
   )
 }

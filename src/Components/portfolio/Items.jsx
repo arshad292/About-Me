@@ -24,7 +24,7 @@ const Items = ({porjectItems}) => {
                 <h3 className="portfolio__title">{title}</h3>
                 <p className="portfolio__description">{description}</p>
 
-                <a href='' className='link'>
+                <a href='#pricing' className='link'>
                 See pricing
                 <FaArrowRight className='link__icon'></FaArrowRight>
                 </a>
